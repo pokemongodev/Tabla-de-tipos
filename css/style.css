@@ -1,0 +1,56 @@
+.table,.table-bordered,.table-sm table,
+.table,.table-bordered,.table-sm tr,
+.table,.table-bordered,.table-sm td,
+.table,.table-bordered,.table-sm th {
+	border: 0.2rem solid black;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+
+tr th {
+	background-color: #CCC;
+}
+
+.superefectivo {
+	background-color:#64dd17
+
+	;
+	color:white;
+}
+
+.pocoefectivo {
+	background-color:#ff5a36;
+	color:white;
+}
+.muypocoefectivo {
+	background-color:#b40000;
+	color:white;
+}
+
+
+table {
+	overflow: hidden;
+	max-width:600px;
+	max-height:600px;
+	margin:auto;
+}
+
+tr:hover {
+	background-color: #CCC;
+}
+
+td, th {
+	position: relative;
+}
+td:hover::after,
+th:hover::after {
+	content: "";
+	position: absolute;
+	background-color: #CCC;
+	left: 0;
+	top: -5000px;
+	height: 10000px;
+	width: 100%;
+	z-index: -1;
+}
